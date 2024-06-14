@@ -21,7 +21,7 @@ outlier_indices <- which(data$`CPU Number of Cores (int)` < 0)
 # Remove outliers from the data frame
 data_clean <- data[-outlier_indices, ]
 
-# Assuming `readxl` and `ggplot2` packages are already installed and loaded
+# Assuming `readxl` and `ggplot2` packages are already installed and loaded qwq
 
 # Create a rainbow-colored histogram using ggplot2
 ggplot(data_clean, aes(x = `CPU Number of Cores (int)`, fill = factor(`CPU Number of Cores (int)`))) +
